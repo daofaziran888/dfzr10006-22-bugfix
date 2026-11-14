@@ -11,6 +11,7 @@ import TraceView from './views/trace'
 import DiagnoseView from './views/diagnose'
 import SchemaView from './views/schema'
 import SubscribeView from './views/subscribe'
+import SubscribeDetailView from './views/subscribe/detail'
 import TransformView from './views/transform'
 import MockView from './views/mock'
 import GatewayView from './views/gateway'
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/diagnose" element={<DiagnoseView />} />
           <Route path="/schema" element={<SchemaView />} />
           <Route path="/subscribe" element={<SubscribeView />} />
+          <Route path="/subscribe/:id" element={<SubscribeDetailView />} />
           <Route path="/transform" element={<TransformView />} />
           <Route path="/mock" element={<MockView />} />
           <Route path="/gateway" element={<GatewayView />} />
